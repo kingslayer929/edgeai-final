@@ -13,6 +13,7 @@ pip install -U bitblas
 git clone https://github.com/kingslayer929/edgeai-final
 unzip checkpoint-3000.zip
 
+cd ~/edgeai-final
 python result.py
 ```
 
