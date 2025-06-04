@@ -1,4 +1,5 @@
 import os
+os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 import torch
@@ -131,7 +132,7 @@ def main():
     )
 
     # 加載 LoRA adapter
-    model = PeftModel.from_pretrained("./checkpoint-3000")
+    model = PeftModel.from_pretrained(model, "./checkpoint-3000")
     model = model.merge_and_unload()  # 合併 LoRA 到原始模型
 
     # 載入 tokenizer
