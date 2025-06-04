@@ -1,3 +1,4 @@
+Run in shell
 ```
 conda create -n edgeai python=3.10
 conda activate edgeai
@@ -12,3 +13,4 @@ unzip checkpoint-3000.zip
 
 python result.py
 ```
+
