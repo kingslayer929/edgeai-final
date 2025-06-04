@@ -8,7 +8,7 @@ cd ~/edgeai-final
 pip install -r requirements.txt
 conda install -c nvidia cuda-nvcc
 sudo apt install cmake
-cd ~/miniconda/envs/edgeai/lib
+cd ~/miniconda3/envs/edgeai/lib
 cp /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30  .
 ln -s -f libstdc++.so.6.0.30 libstdc++.so.6
 pip install -U bitblas
