@@ -4,6 +4,7 @@ conda activate edgeai
 
 git clone https://github.com/kingslayer929/edgeai-final
 
+cd ~/edgeai-final
 pip install -r requirements.txt
 conda install -c nvidia cuda-nvcc
 sudo apt install cmake
