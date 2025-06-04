@@ -2,6 +2,9 @@
 conda create -n edgeai python=3.10
 conda activate edgeai
 
+git clone https://github.com/kingslayer929/edgeai-final
+unzip checkpoint-3000.zip
+
 pip install -r requirements.txt
 conda install -c nvidia cuda-nvcc
 sudo apt install cmake
@@ -10,8 +13,7 @@ cp /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30  .
 ln -s -f libstdc++.so.6.0.30 libstdc++.so.6
 pip install -U bitblas
 
-git clone https://github.com/kingslayer929/edgeai-final
-unzip checkpoint-3000.zip
+
 
 cd ~/edgeai-final
 python result.py
